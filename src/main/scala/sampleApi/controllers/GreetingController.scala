@@ -1,9 +1,13 @@
 package sampleApi.controllers
+
 import org.scalatra.ScalatraServlet
+import org.slf4j.{Logger, LoggerFactory}
 
 class GreetingController extends ScalatraServlet {
+  val logger =  LoggerFactory.getLogger(getClass)
 
   get("/") {
+    logger.info("We have entered a spectacular binary star system in the Kavis Alpha sector");
     "Hello world"
   }
 
@@ -11,4 +15,4 @@ class GreetingController extends ScalatraServlet {
     val name = params.getOrElse("name", "world")
     "Hello " + name
   }
-} 
+}
