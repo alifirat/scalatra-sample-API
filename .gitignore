@@ -1,17 +1,27 @@
-*.class
-*.log
+## generic files to ignore
+*~
+*.lock
+*.DS_Store
+*.swp
+*.out
 
 # sbt specific
-.cache/
-.history/
-.lib/
-dist/*
 target/
-lib_managed/
-src_managed/
-project/boot/
-project/plugins/project/
+project/boot
+lib_managed/*
+project/build/target
+project/build/lib_managed
+project/build/src_managed
+project/plugins/lib_managed
+project/plugins/target
+project/plugins/src_managed
+project/plugins/project
 
-# Scala-IDE specific
-.scala_dependencies
-.worksheet
+# intellij
+*.eml
+*.iml
+*.ipr
+*.iws
+.*.sw?
+*.idea
+
