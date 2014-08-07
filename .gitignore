@@ -5,6 +5,9 @@
 *.swp
 *.out
 
+#auto generated
+version.conf
+
 # sbt specific
 target/
 project/boot
