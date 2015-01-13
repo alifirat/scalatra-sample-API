@@ -9,4 +9,4 @@ class ScalatraBootstrap extends LifeCycle {
     context.mount(new GreetingController, "/sample/*")
     context.mount(new HealthCheckController, "/heartbeat/*")
   }
-} 
+}

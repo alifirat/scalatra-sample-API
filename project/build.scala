@@ -10,7 +10,10 @@ object LXAPIBuild extends Build {
   lazy val project = Project (
     "sampleAPI",
     file("."),
-    settings = Defaults.defaultSettings ++ Seq(webSettings :_*)++ Seq(
+    settings = Defaults.defaultSettings
+      ++ Seq(webSettings :_*)
+      ++ Seq(org.scalastyle.sbt.ScalastylePlugin.projectSettings :_*)
+      ++ Seq(
       libraryDependencies ++= Seq(
         "org.scalatra" %% "scalatra" % "2.2.2",
         "org.eclipse.jetty" % "jetty-webapp" % "8.1.7.v20120910" % "container,compile",
@@ -19,5 +22,6 @@ object LXAPIBuild extends Build {
         "org.scalatra" %% "scalatra-scalatest" % "2.2.2" % "test"
       )
     )
+
   )
 }

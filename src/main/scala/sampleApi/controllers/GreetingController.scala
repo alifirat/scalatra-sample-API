@@ -1,7 +1,7 @@
 package sampleApi.controllers
 
 import org.scalatra.ScalatraServlet
-import org.slf4j.{Logger, LoggerFactory}
+import org.slf4j.{LoggerFactory}
 
 class GreetingController extends ScalatraServlet {
   val logger =  LoggerFactory.getLogger(getClass)

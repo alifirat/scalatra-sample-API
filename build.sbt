@@ -1,0 +1,1 @@
+addCommandAlias("full", ";clean ;compile ;test ;scalastyle")
